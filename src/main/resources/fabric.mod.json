@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "meteor-chess",
+  "version": "${version}",
+  "name": "Meteor Chess",
+  "description": "Play chess inside Meteor Client: against a built-in engine or against other players using the addon.",
+  "authors": [
+    "Rumble5930"
+  ],
+  "icon": "assets/chess/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "com.rumble5930.chess.ChessAddon"
+    ]
+  },
+  "custom": {
+    "meteor-client:color": "145,61,226",
+    "modmenu": {
+      "parent": {
+        "id": "meteor-client"
+      }
+    }
+  },
+  "depends": {
+    "java": ">=${jdk_version}",
+    "minecraft": "${minecraft_version}",
+    "meteor-client": "*"
+  }
+}
